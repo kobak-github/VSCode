@@ -53,7 +53,7 @@ body{
 .menu__link{
     text-transform: uppercase;
     padding: 43px 20px;
-    transition: all 1s;
+    transition: all .5s;
 }
 
 .menu__link:hover{
@@ -73,6 +73,7 @@ body{
 .bike__column-slider{
     flex-basis: 630px;
     margin-left: 30px;
+    max-width: 630px;
 }
 
 .bike__title{
@@ -105,4 +106,102 @@ body{
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.1em;
+}
+
+.bike__link:hover{
+    background-color: #ff4040;
+    transition: all .5s;
+}
+
+.bike-slider .slick-dots{
+    right: 0;
+    top: 50px;
+}
+
+.slick-dots{
+    position: absolute;
+}
+
+.slick-dots li + li{
+    padding-top: 10px;
+}
+
+.slick-dots button{
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: #131313;
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.slick-dots button:hover{
+    background-color: #ff4040;
+    transition: all .5s;
+}
+
+.slick-active button{
+    background-color: #ff4040;
+}
+
+.bike__list{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.bike__list-item{
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 58px;
+}
+
+.bike__list-num{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bike__list-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: auto 0;
+}
+
+.info{
+    margin-bottom: 150px;
+}
+
+.info__inner{
+    display: flex;
+}
+
+.info__img{
+    margin-right: 60px;
+    flex-basis: 570px;
+    object-fit: cover;
+}
+
+.info__list{
+    flex-basis: 490px;
+}
+
+.info__item + .info__item{
+    padding-top: 50px;
+}
+
+.info__item-title{
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+
+}
+
+.info__item-text{
+    max-width: 450px;
 }
